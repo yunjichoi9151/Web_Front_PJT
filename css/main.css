@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,10 +13,10 @@ a {
 body {
   position: relative;
   min-height: 100vh;
-}
+} */
 
 /* header 태그 안에 CSS 속성 */
-header {
+/* header {
   height: 70px;
   background-color: #53e3a6;
   color: white;
@@ -95,17 +95,21 @@ header {
   color: green;
   text-decoration: none;
 }
+*/
 
-.container {
+.form-inline {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/*.container {
   position: relative;
   z-index: 1;
   max-width: 100%;
   margin: 0 auto;
   height: auto;
   min-height: 100%;
-  padding-bottom: 80px;
+  display:flex;
 }
-
 .content-user-list-ul {
   display: flex;
   flex-wrap: wrap;
@@ -120,10 +124,10 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
+}*/
 
 /* footer 태그 안에 CSS 속성 */
-footer {
+/*footer {
   position: absolute;
   bottom: 0;
   background-color: #53e3a6;
@@ -166,4 +170,4 @@ table {
 
 .buttons #opt3 {
   margin-left: 10px;
-}
+} */

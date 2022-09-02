@@ -24,9 +24,6 @@ window.onload = function () {
           let videoItem = `
             <li>
               <div class="list-item">
-                <div>
-                  <img src="${videoData[i]["img"]}" alt="" />
-                </div>
                 <div class="user-info">
                   <div>
                     <div>${videoData[i]["id"]}</div>
