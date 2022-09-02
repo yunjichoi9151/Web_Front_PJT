@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,193 +27,188 @@
   </style>
 </head>
 <body>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white"><b>이 사이트의 정보</b></h4>
-          <p class="text-muted">운동영상 정보를 확인할 수 있는 사이트입니다.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Menu</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">헬스장 찾기</a></li>
-            <li><span class="nav-menu"><a href="login.html">로그인</a></span></li>
-            <li><a href="#" class="text-white">Logout</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM126.5 199.3c-1 .4-1.9 .8-2.9 1.2l-8 3.5c-16.4 7.3-29 21.2-34.7 38.2l-2.6 7.8c-5.6 16.8-23.7 25.8-40.5 20.2s-25.8-23.7-20.2-40.5l2.6-7.8c11.4-34.1 36.6-61.9 69.4-76.5l8-3.5c20.8-9.2 43.3-14 66.1-14c44.6 0 84.8 26.8 101.9 67.9L281 232.7l21.4 10.7c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L247 287.3c-10.3-5.2-18.4-13.8-22.8-24.5l-9.6-23-19.3 65.5 49.5 54c5.4 5.9 9.2 13 11.2 20.8l23 92.1c4.3 17.1-6.1 34.5-23.3 38.8s-34.5-6.1-38.8-23.3l-22-88.1-70.7-77.1c-14.8-16.1-20.3-38.6-14.7-59.7l16.9-63.5zM68.7 398l25-62.4c2.1 3 4.5 5.8 7 8.6l40.7 44.4-14.5 36.2c-2.4 6-6 11.5-10.6 16.1L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L68.7 398z"/></svg>
-        <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>-->
-        <strong>SSAFIT</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-
-<main>
-  <section class="content-video-list">
-    <ul class="content-video-list-ul">
-      <!--비동기로 사용자 정보 가져오기-->
-    </ul>
-  </section>
-  <center>
-    <img src="/img/exercise2.png" style="max-width: 80%; height: auto; margin-bottom: 30px;">
-  </center>
-<!--  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
-    </div>
-  </section>-->
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="운동 제목 검색" aria-label="Search" style="margin-bottom:30px">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="height:38px">Search</button>
-      </form>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/gMaB-fG4u4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <div class="card-body">
-              <p class="card-text"><b>전신 다이어트 최고의 운동 [칼소폭 찐 핵핵매운맛]</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">전신</button>
-                </div>
-                <small class="text-muted">ThankyouBUBU</small>
-              </div>
-            </div>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white"><b>이 사이트의 정보</b></h4>
+            <p class="text-muted">운동영상 정보를 확인할 수 있는 사이트입니다.</p>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/swRNeYw1JkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>하루 15분! 전신 칼로리 불태우는 다이어트 운동</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">전신</button>
-                </div>
-                <small class="text-muted">ThankyouBUBU</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/54tTYO-vU2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>상체 다이어트 최고의 운동 BEST [팔뚝살/겨드랑이살/등살/가슴어깨라인]</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">상체</button>
-                </div>
-                <small class="text-muted">ThankyouBUBU</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/QqqZH3j_vH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>상체비만 다이어트 최고의 운동 [상체 핵매운맛]</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">상체</button>
-                </div>
-                <small class="text-muted">ThankyouBUBU</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/tzN6ypk6Sps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>하체운동이 중요한 이유? 이것만 보고 따라하자 ! [하체운동 교과서]</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">하체</button>
-                </div>
-                <small class="text-muted">김강민</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/u5OgcZdNbMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>저는 하체 식주의자 입니다</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">하체</button>
-                </div>
-                <small class="text-muted">GYM종국</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/PjGcOP-TQPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>11자복근 복부 최고의 운동 [복근 핵매운맛]</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">복부</button>
-                </div>
-                <small class="text-muted">ThankyouBUBU</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe width="100%" height="225" src="https://www.youtube.com/embed/7TLk7pscICk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text"><b>(Sub)누워서하는 5분 복부운동!! 효과보장! (매일 2주만 해보세요!)</b></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">복부</button>
-                </div>
-                <small class="text-muted">SomiFit</small>
-              </div>
-            </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Menu</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white" style="text-decoration:none">Home</a></li>
+              <li><a href="#" class="text-white" style="text-decoration:none">헬스장 찾기</a></li>
+              <li><span class="nav-menu"><a href="login.html" style="text-decoration:none" class="text-white">로그인</a></span></li>
+              <li><a href="#" class="text-white" style="text-decoration:none">Logout</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM126.5 199.3c-1 .4-1.9 .8-2.9 1.2l-8 3.5c-16.4 7.3-29 21.2-34.7 38.2l-2.6 7.8c-5.6 16.8-23.7 25.8-40.5 20.2s-25.8-23.7-20.2-40.5l2.6-7.8c11.4-34.1 36.6-61.9 69.4-76.5l8-3.5c20.8-9.2 43.3-14 66.1-14c44.6 0 84.8 26.8 101.9 67.9L281 232.7l21.4 10.7c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L247 287.3c-10.3-5.2-18.4-13.8-22.8-24.5l-9.6-23-19.3 65.5 49.5 54c5.4 5.9 9.2 13 11.2 20.8l23 92.1c4.3 17.1-6.1 34.5-23.3 38.8s-34.5-6.1-38.8-23.3l-22-88.1-70.7-77.1c-14.8-16.1-20.3-38.6-14.7-59.7l16.9-63.5zM68.7 398l25-62.4c2.1 3 4.5 5.8 7 8.6l40.7 44.4-14.5 36.2c-2.4 6-6 11.5-10.6 16.1L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L68.7 398z"/></svg>
+          <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>-->
+          <strong>SSAFIT</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
 
+  <main>
+    <section class="content-video-list">
+      <ul class="content-video-list-ul">
+        <!--비동기로 사용자 정보 가져오기-->
+      </ul>
+    </section>
+    <center>
+      <img src="/img/exercise2.png" style="max-width: 80%; height: auto; margin-bottom: 30px;">
+    </center>
+    <!--  <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Album example</h1>
+            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p>
+          </div>
+        </div>
+      </section>-->
 
+    <div class="album py-5 bg-light">
+      <div class="container">
 
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="운동 제목 검색" aria-label="Search" style="margin-bottom:30px">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="height:38px">Search</button>
+        </form>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/gMaB-fG4u4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+              <div class="card-body">
+                <p class="card-text"><b>전신 다이어트 최고의 운동 [칼소폭 찐 핵핵매운맛]</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">전신</button>
+                  </div>
+                  <small class="text-muted">ThankyouBUBU</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/swRNeYw1JkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>하루 15분! 전신 칼로리 불태우는 다이어트 운동</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">전신</button>
+                  </div>
+                  <small class="text-muted">ThankyouBUBU</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/54tTYO-vU2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>상체 다이어트 최고의 운동 BEST [팔뚝살/겨드랑이살/등살/가슴어깨라인]</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">상체</button>
+                  </div>
+                  <small class="text-muted">ThankyouBUBU</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/QqqZH3j_vH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>상체비만 다이어트 최고의 운동 [상체 핵매운맛]</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">상체</button>
+                  </div>
+                  <small class="text-muted">ThankyouBUBU</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/tzN6ypk6Sps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>하체운동이 중요한 이유? 이것만 보고 따라하자 ! [하체운동 교과서]</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">하체</button>
+                  </div>
+                  <small class="text-muted">김강민</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/u5OgcZdNbMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>저는 하체 식주의자 입니다</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">하체</button>
+                  </div>
+                  <small class="text-muted">GYM종국</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/PjGcOP-TQPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>11자복근 복부 최고의 운동 [복근 핵매운맛]</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">복부</button>
+                  </div>
+                  <small class="text-muted">ThankyouBUBU</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <iframe width="100%" height="225" src="https://www.youtube.com/embed/7TLk7pscICk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text"><b>(Sub)누워서하는 5분 복부운동!! 효과보장! (매일 2주만 해보세요!)</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">복부</button>
+                  </div>
+                  <small class="text-muted">SomiFit</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">

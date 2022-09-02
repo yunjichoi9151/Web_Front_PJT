@@ -1,5 +1,5 @@
 .signin {
-  margin-top: 120px;
+  margin-top: 10px;
   padding: 100px 0 150px;
   background-image: url("../images/signin_bg.jpg");
   background-attachment: fixed;
@@ -44,7 +44,7 @@
 .signin__card form p {
 	margin-top: 12px;
 	font-size: 12px;
-	color: #EA9926;
+	color: #292929;
 	text-align: center;
 }
 .signin__card .actions {
@@ -68,11 +68,11 @@
 }
 .btn.btn--primary {
 	color: #FFF;
-	background-color: #EA9926;
+	background-color: #6b6b6b;
 	border: none;
 }
 .btn.btn.btn--primary:hover {
-	background-color: #cc8823;
+	background-color: #ffffff;
 }
 .btn.block {
 	width: 100%
