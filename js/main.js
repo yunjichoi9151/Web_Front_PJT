@@ -48,28 +48,23 @@ window.onload = function () {
   xhr.send();
 };
 
-function regist() {
-  let id = document.getElementById("id").value;
-  let password = document.getElementById("password").value;
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let age = document.getElementById("age").value;
+function review_regist() {
+  let title = document.getElementById("title").value;
+  let review = document.getElementById("review").value;
 
-  if (!id || !password || !name || !email || !age) {
+
+  if (!title || !review) {
     alert("빈칸이 없도록 입력해주세요.");
     return;
   } else {
-    const user = {
-      id: id,
-      password: password,
-      name: name,
-      email: email,
-      age: age,
+    const userreview = {
+      title: title,
+      review: review,
     };
 
-    localStorage.setItem("user", JSON.stringify(user));
-    alert("사용자 등록 성공!");
-    window.location.replace("login.html");
+    localStorage.setItem("userreview", JSON.stringify(userreview));
+    alert("리뷰 등록 성공!");
+    window.location.replace("review.html");
   }
 }
 
@@ -90,4 +85,12 @@ function login() {
   } else {
     alert("로그인 실패 !");
   }
+}
+
+function regist(){
+  window.location.replace("review_regist.html");
+}
+
+function cancel(){
+  window.location.replace("review.html");
 }

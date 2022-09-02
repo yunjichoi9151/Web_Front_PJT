@@ -37,9 +37,9 @@ header {
   text-align: center;
 }
 
-.login-page {
-  width: 360px;
-  padding: 7% 0 0;
+.review-page {
+  width: 720px;
+  padding: 10% 0 0;
   margin: auto;
 }
 
@@ -103,7 +103,7 @@ header {
   margin: 0 auto;
   height: auto;
   min-height: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 .content-user-list-ul {
@@ -141,4 +141,29 @@ footer {
 
 .footer-list a {
   margin: 0px 10px;
+}
+
+h4 {
+  text-align: center;
+}
+
+table {
+  font-size: small;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons #opt1 {
+  margin-right: auto;
+}
+
+.buttons #opt2 {
+  margin-left: auto;
+}
+
+.buttons #opt3 {
+  margin-left: 10px;
 }
