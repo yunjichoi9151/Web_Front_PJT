@@ -1,11 +1,11 @@
 window.onload = function () {
-  if (!document.querySelector(".content-user-list col-10")) return;
+  if (!document.querySelector(".content-video-list col-10")) return;
   // 비동기 통신을 위해 새로운 xmlhttp 요청 생성
   const xhr = new XMLHttpRequest();
   // 요청 method
   const method = "GET";
   // 파일 위치
-  const url = "/data/user.json";
+  const url = "/data/video.json";
 
   // 위의 method 와 url 로 비동기 요청 초기화
   xhr.open(method, url);
@@ -18,27 +18,28 @@ window.onload = function () {
       if (xhr.status === 200) {
         // Json 객체 형태로 응답 받기
         const resJson = JSON.parse(xhr.responseText);
-        const userData = resJson.users;
-        let userList = document.querySelector(".content-user-list col-10");
-        for (let i = 0; i < userData.length; i++) {
-          let carItem = `
+        const videoData = resJson.videos;
+        let videoList = document.querySelector(".content-video-list col-10");
+        for (let i = 0; i < videoData.length; i++) {
+          let videoItem = `
             <li>
               <div class="list-item">
                 <div>
-                  <img src="${userData[i]["img"]}" alt="" />
+                  <img src="${videoData[i]["img"]}" alt="" />
                 </div>
                 <div class="user-info">
                   <div>
-                    <div>${userData[i]["id"]}</div>
-                    <div>${userData[i]["name"]}</div>
-                    <div>${userData[i]["email"]}</div>
-                    <div>${userData[i]["age"]} 세</div>
+                    <div>${videoData[i]["id"]}</div>
+                    <div>${videoData[i]["title"]}</div>
+                    <div>${videoData[i]["part"]}</div>
+                    <div>${videoData[i]["channelName"]}</div>
+                    <div>${videoData[i]["url"]}</div>
                   </div>
                 </div>
               </div>
             </li>
             `;
-          userList.innerHTML += carItem;
+          videoList.innerHTML += videoItem;
         }
       }
     }
