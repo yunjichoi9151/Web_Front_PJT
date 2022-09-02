@@ -1,3 +1,5 @@
+let user;
+
 window.onload = function () {
   if (!document.querySelector(".content-video-list col-10")) return;
   // 비동기 통신을 위해 새로운 xmlhttp 요청 생성
@@ -24,6 +26,9 @@ window.onload = function () {
           let videoItem = `
             <li>
               <div class="list-item">
+                <div>
+                  <img src="${videoData[i]["img"]}" alt="" />
+                </div>
                 <div class="user-info">
                   <div>
                     <div>${videoData[i]["id"]}</div>
@@ -46,22 +51,24 @@ window.onload = function () {
 };
 
 function review_regist() {
+  let name = document.getElementById("writer").value;
   let title = document.getElementById("title").value;
   let review = document.getElementById("review").value;
 
 
-  if (!title || !review) {
+  if (!name || !title || !review) {
     alert("빈칸이 없도록 입력해주세요.");
     return;
   } else {
-    const userreview = {
-      title: title,
-      review: review,
-    };
+    let dataArray = []
+    let data = {};
+    data.title = title;
+    data.review = review;
+    dataArray.push(data);
 
-    localStorage.setItem("userreview", JSON.stringify(userreview));
+    localStorage.setItem(name, JSON.stringify(dataArray));
     alert("리뷰 등록 성공!");
-    window.location.replace("review.html");
+    window.location.replace("review_regist.html");
   }
 }
 
@@ -91,3 +98,8 @@ function regist(){
 function cancel(){
   window.location.replace("review.html");
 }
+
+function modify(){
+  window.location.replace("review_modify.html");
+}
+

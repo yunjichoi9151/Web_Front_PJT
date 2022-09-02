@@ -5,6 +5,7 @@
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
   color: whitesmoke;
@@ -13,7 +14,7 @@ a {
 body {
   position: relative;
   min-height: 100vh;
-} */
+}
 
 /* header 태그 안에 CSS 속성 */
 /* header {
@@ -35,7 +36,7 @@ body {
 
 .content-user-list h1 {
   text-align: center;
-}
+} */ */
 
 .review-page {
   width: 720px;
@@ -43,7 +44,7 @@ body {
   margin: auto;
 }
 
-.form {
+/* .form {
   position: relative;
   z-index: 1;
   background: #ffffff;
@@ -95,21 +96,17 @@ body {
   color: green;
   text-decoration: none;
 }
-*/
 
-.form-inline {
-  display: flex;
-  flex-wrap: nowrap;
-}
-/*.container {
+.container {
   position: relative;
   z-index: 1;
   max-width: 100%;
   margin: 0 auto;
   height: auto;
   min-height: 100%;
-  display:flex;
-}
+  padding-bottom: 80px;
+} */
+/* 
 .content-user-list-ul {
   display: flex;
   flex-wrap: wrap;
@@ -124,10 +121,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}*/
+} */
 
 /* footer 태그 안에 CSS 속성 */
-/*footer {
+/* footer {
   position: absolute;
   bottom: 0;
   background-color: #53e3a6;
@@ -145,6 +142,11 @@ body {
 
 .footer-list a {
   margin: 0px 10px;
+} */
+
+.form-inline {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 h4 {
@@ -170,4 +172,24 @@ table {
 
 .buttons #opt3 {
   margin-left: 10px;
-} */
+}
+
+#search {
+  display: flex;
+  text-align: center;
+  font-size: small;
+}
+
+th > a {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.shadow {
+  text-align: center;
+}

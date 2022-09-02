@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>리뷰 상세</title>
+  <title>리뷰 수정</title>
   <link rel="stylesheet" href="css/main.css" />
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -18,25 +18,17 @@
 </head>
 <body>
   <main class="container">
-    <div>
+    <div class="review-page">
       <h4 style="margin-top: 20px">운동영상 리뷰</h4>
       <hr>
-      <div class="buttons">
-        <button id="opt1" type="button" class="btn btn-outline-primary" onclick="cancel()">목록</button>
-        <button id="opt2" type="button" class="btn btn-outline-primary" onclick="modify()">글수정</button>
-        <button id="opt3" type="button" class="btn btn-outline-danger" onclick="">글삭제</button> 
-      </div>    
-      <br>
-      <div class="shadow p-3 mb-5 bg-body rounded"><b style="font-size:x-large;">와~ 효과만점 운동 영상입니다</b>
+      <form>
+        <input type="text" class="form-control" id="title" placeholder="">
+        <label for="exampleFormControlTextarea1" class="form-label"></label>
+        <textarea class="form-control" id="review" rows="4" placeholder="수정할 내용"></textarea>
         <br>
-        작성자 : 김홍자
-        <br>
-        작성일 : 2022-09-02 
-        <br>
-        조회수 : 1
-        <hr>
-        강추!!!
-      </div>
+        <button type="button" class="btn btn-outline-primary" onclick="cancel()">수정</button>
+        <button type="button" class="btn btn-outline-danger" onclick="cancel()">취소</button>
+      </form>      
     </div> 
    </main>
   <script type="text/javascript" src="js/main.js"></script>

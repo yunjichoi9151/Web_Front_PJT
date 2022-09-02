@@ -19,11 +19,13 @@
 <body>
   <main class="container">
     <div class="review-page">
-      <h4>운동영상 리뷰</h4>
+      <h4 style="margin-top: 20px">운동영상 리뷰</h4>
       <hr>
       <form>
+        <input type="text" class="form-control" id="writer" placeholder="작성자">
+        <br>
         <input type="text" class="form-control" id="title" placeholder="제목">
-        <label for="exampleFormControlTextarea1" class="form-label"></label>
+        <br>
         <textarea class="form-control" id="review" rows="4" placeholder="내용"></textarea>
         <br>
         <button type="button" class="btn btn-outline-primary" onclick="review_regist()">등록</button>

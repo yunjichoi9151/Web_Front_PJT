@@ -17,16 +17,56 @@
 ></script>
 </head>
 <body>
+  <header>
+  
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <Strong>SSAFIT</Strong>
+        </a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </li>
+          <form class="form-inline">
+            <a href="login.html"><button class="btn btn-outline-success" type="button">Login</button></a>
+            <button class="btn btn-outline-success" type="button">Logout</button>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </header>
+
   <main class="container">
     <div class="review-page">
-      <h4>운동영상 리뷰</h4>
+      <h4 style="margin-top: 20px">운동영상 리뷰</h4>
       <hr>
-      <iframe style= "width: 100%; height: 400px" src="https://www.youtube.com/embed/rVNsEXZPEF8" title="(Ep.6) 요즘은 복붙만 잘하면 HTML/CSS 디자인 끝 (Bootstrap 4)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
+      <center>
+        <iframe width="60%" height="400px" src="https://www.youtube.com/embed/tzN6ypk6Sps" title="하체운동이 중요한 이유? 이것만 보고 따라하자 ! [하체운동 교과서]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>        
     </div>
     <hr>
     <div>
-      <button type="button" class="btn btn-outline-primary" onclick="regist()">글 작성</button>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <button type="button" class="btn btn-outline-primary" onclick="regist()">글 작성</button>
+          </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="제목, 내용으로 검색" aria-label="Search">
+            <button id="search" class="btn btn-outline-success" type="submit">검색</button>
+          </form>
+        </div>
+      </nav>
     </div>
     <hr>
     <div>
@@ -41,30 +81,35 @@
           </tr>
         </thead>
         <tbody>
-          <!--여기 부분을 동적으로?-->
-          <tr>
-            <th>4</th>
-            <th>와~효과만점 영상입니다.</th>
-            <th>한상원</th>
-            <th>0</th>
-            <th>2022.09.02</th>
-          </tr>
-          <tr>
-            <th>3</th>
-            <th>처음 회원가입 했어요^^</th>
-            <th>최윤지</th>
-            <th>3</th>
-            <th>2022.09.01</th>
-          </tr>
           <tr>
             <th>2</th>
-            <th>영상이 별로에요.</th>
-            <th>한상원</th>
-            <th>0</th>
-            <th>2022.09.01</th>
+            <th><a href="review_detail.html">영상이 재밌어요</a></th>
+            <th>박성자</th>
+            <th>13</th>
+            <th>2022-09-01</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th><a href="review_detail.html">첫 글입니다</a></th>
+            <th>김복자</th>
+            <th>3</th>
+            <th>2022-09-01</th>
           </tr>
         </tbody>
       </table>
+
+      <!-- <table class="board">
+        <thead class="board__table-head">
+          <tr class="board__titles">
+            <th class="board__column">번호</th>
+            <th class="board__column">제목</th>
+            <th class="board__column">작성자</th>
+            <th class="board__column">작성일</th>
+            <th class="board__column">조회</th>
+          </tr>
+        </thead>
+        <tbody class="board__contents" id="board-body"></tbody>
+      </table> -->
       <hr/>
       <div class="page">
         <ul class="pagination justify-content-center">
@@ -82,5 +127,6 @@
     </div>
   </main>
  <script type="text/javascript" src="js/main.js"></script>
+ <script type="text/javascript" src="js/board.js"></script>
 </body>
 </html>
