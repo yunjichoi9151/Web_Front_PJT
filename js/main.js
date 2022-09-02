@@ -1,13 +1,11 @@
-let user;
-
 window.onload = function () {
-  if (!document.querySelector(".content-video-list col-10")) return;
+  // if (!document.querySelector(".content-video-list-ul")) return;
   // 비동기 통신을 위해 새로운 xmlhttp 요청 생성
   const xhr = new XMLHttpRequest();
   // 요청 method
   const method = "GET";
   // 파일 위치
-  const url = "/data/video.json";
+  const url = "data/video.json";
 
   // 위의 method 와 url 로 비동기 요청 초기화
   xhr.open(method, url);
@@ -21,34 +19,57 @@ window.onload = function () {
         // Json 객체 형태로 응답 받기
         const resJson = JSON.parse(xhr.responseText);
         const videoData = resJson.videos;
-        let videoList = document.querySelector(".content-video-list col-10");
-        for (let i = 0; i < videoData.length; i++) {
-          let videoItem = `
-            <li>
-              <div class="list-item">
-                <div>
-                  <img src="${videoData[i]["img"]}" alt="" />
-                </div>
-                <div class="user-info">
-                  <div>
-                    <div>${videoData[i]["id"]}</div>
-                    <div>${videoData[i]["title"]}</div>
-                    <div>${videoData[i]["part"]}</div>
-                    <div>${videoData[i]["channelName"]}</div>
-                    <div>${videoData[i]["url"]}</div>
+        console.log(resJson)
+        let videoList = document.querySelector(".content-video-list-ul");
+        let videoItem ='<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">';
+
+        for (let i = 0; i < resJson.length; i++) {
+          videoItem += `
+            <div class="col">
+              <div class="card shadow-sm">
+                <iframe width="100%" height="225" src="${resJson[i]["url"]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text"><b>${resJson[i]["title"]}</b></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">${resJson[i]["part"]}</button>
+                    </div>
+                    <small class="text-muted">${resJson[i]["channelName"]}</small>
                   </div>
                 </div>
-              </div>
-            </li>
+              </div>            
+            </div>
             `;
-          videoList.innerHTML += videoItem;
+          
         }
+        videoItem += '</div>';
+        videoList.innerHTML = videoItem;
       }
     }
   };
   // 요청 보내기
   xhr.send();
 };
+
+// const URL = "data/video.json";
+// window.onload = function() {
+//   const xhr = new XMLHttpRequest();
+
+//   xhr.onreadystatechange = function() {
+//     if(xhr.readyState == xhr.DONE) {
+//       if(xhr.status == 200) {
+//         const imgSrc = JSON.parse(xhr.response)['message']
+//         const imgTag = document.querySelector("#dog-img")
+//         imgTag.src = imgSrc;
+
+//       }
+//     }
+//   }
+
+//   xhr.open("GET", URL)
+//   xhr.send()  
+// }
+
 
 function review_regist() {
   let name = document.getElementById("writer").value;

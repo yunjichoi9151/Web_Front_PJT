@@ -24,6 +24,15 @@
         font-size: 3.5rem;
       }
     }
+    ul{
+      list-style:none;
+      padding-left:0px;
+    }
+    .centered {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
@@ -63,13 +72,13 @@
 
 
   <main>
-    <section class="content-video-list">
-      <ul class="content-video-list-ul">
+    <section class="content">
+      <ul class="content-video">
         <!--비동기로 사용자 정보 가져오기-->
       </ul>
     </section>
     <center>
-      <img src="/img/exercise2.png" style="max-width: 80%; height: auto; margin-bottom: 30px;">
+      <img src="img/exercise2.png" style="max-width: 80%; height: auto; margin-bottom: 30px;">
     </center>
     <!--  <section class="py-5 text-center container">
         <div class="row py-lg-5">
@@ -84,13 +93,22 @@
         </div>
       </section>-->
 
+
     <div class="album py-5 bg-light">
       <div class="container">
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="운동 제목 검색" aria-label="Search" style="margin-bottom:30px">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="height:38px">Search</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="height:38px">Search</button>        
         </form>
-        <a href="review.html">
+          <div class="content-video-list">
+            <ul class="content-video-list-ul">
+
+            </ul>
+          </div>
+        
+       
+         
+        <!-- <a href="review.html">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
               <div class="card shadow-sm">
@@ -205,17 +223,20 @@
             </div>
           </div>
         </div>
-       </a>
+       </a> -->
       </div>
     </div>
+
   </main>
 <footer class="text-muted py-5">
   <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+    <center>
+      <p class="mb-2"><a href="#" style="text-decoration:none; margin-right:30px" class="text-black">개인정보 처리방침</a><a href="#" style="text-decoration:none; margin-right:30px" class="text-black">이용 약관</a><a href="#" style="text-decoration:none; margin-right:30px" class="text-black">오시는 길</a></p>
+      <p class="float-end mb-2">
+        <a href="#">Back to top</a>
+      </p>
+      
+    </center>
   </div>
 </footer>
 

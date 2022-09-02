@@ -23,6 +23,11 @@
           font-size: 3.5rem;
         }
       }
+      .centered {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
   <body>
@@ -80,13 +85,15 @@
         </div>
       </div>
     </main>
-    <footer>
-      <ul class="footer-list">
-        <li><a href="#">개인정보 처리방침</a></li>
-        <li><a href="#">이용 약관</a></li>
-        <li><a href="#">오시는 길</a></li>
-        <li>&copy; SSAFY</li>
-      </ul>
+    <footer class="text-muted py-5">
+      <div class="container">
+        <center>
+          <p class="mb-2"><a href="#" style="text-decoration:none; margin-right:30px" class="text-black">개인정보 처리방침</a><a href="#" style="text-decoration:none; margin-right:30px" class="text-black">이용 약관</a><a href="#" style="text-decoration:none; margin-right:30px" class="text-black">오시는 길</a></p>
+          <p class="float-end mb-2">
+            <a href="#">Back to top</a>
+          </p>
+        </center>
+      </div>
     </footer>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
